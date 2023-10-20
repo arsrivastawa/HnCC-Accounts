@@ -2,7 +2,11 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,jsx}"],
   theme: {
-    extend: {},
+    extend: {
+      boxShadow:{
+        'hero-btn-shadow':'5px 5px 5px rgba(0, 0, 0, 0.3)'
+      }
+    },
   },
   plugins: [],
 }
