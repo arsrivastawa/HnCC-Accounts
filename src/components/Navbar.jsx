@@ -4,7 +4,7 @@ import { BiSolidUser } from "react-icons/bi";
 const Navbar = () => {
   return (
     <>
-      <div className="navbar-container py-[46px] px-20 flex justify-between items-center w-screen">
+      <div className="navbar-container py-[46px] px-20 flex justify-between items-center w-full">
         <div className="logo-container">
           <img
             src="../src/assets/hncc-logo.jpg"

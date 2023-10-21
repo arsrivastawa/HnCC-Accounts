@@ -3,7 +3,7 @@ import React from "react";
 const Hero = () => {
   return (
     <>
-      <div className="hero-container flex flex-row px-20 py-20">
+      <div className="hero-container flex flex-row w-full px-20 py-20">
         <div className="hero-txt-container w-1/2">
           <div className="hero-title text-[52px]/[68px] text-black font-bold font-['SF Pro Display']">
             "Join hands with us to support our club's events and programs."
@@ -24,7 +24,7 @@ const Hero = () => {
             src="../src/assets/wp883347-grand-theft-auto-v-wallpapers.jpg"
             className="w-10/12 mx-auto h-fit"
             alt=""
-            srcset=""
+            srcSet=""
           />
         </div>
       </div>
