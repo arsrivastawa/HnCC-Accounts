@@ -8,11 +8,13 @@ import About from "./components/About";
 
 import Signup from "./components/signup";
 import {
-  BrowserRouter as Router,
-  Switch,
+  BrowserRouter,
+  
   Route,
+  Routes,
   Link
 } from "react-router-dom";
+import Combined from "./components/Combined";
 
 
 function App() {
@@ -21,13 +23,13 @@ function App() {
   return (
     <>
     <BrowserRouter>
-      <Navbar />
+      
+
       <Routes>
           <Route path="/Signup" element={<Signup/>}/>
+          <Route path="/" element={<Combined/>}/>
       </Routes>
-
-      <Hero />
-      <About />
+      
       </BrowserRouter> 
     </>
   );
