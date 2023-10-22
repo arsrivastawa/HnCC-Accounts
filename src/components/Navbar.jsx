@@ -1,6 +1,9 @@
 import React from "react";
 import { RiAdminFill } from "react-icons/ri";
 import { BiSolidUser } from "react-icons/bi";
+
+import {Link} from "react-router-dom"
+
 const Navbar = () => {
   return (
     <>
@@ -17,14 +20,14 @@ const Navbar = () => {
             <button className="mr-9">HOME</button>
             <button>ABOUT US</button>
           </div>
-          <div className="auth-btn-container flex flex-row w-fit">
-            <div className="w-fit flex flex-row items-center  text-white bg-black px-[30px] rounded-lg py-4">
+          <div className="auth-btn-container flex flex-row w-fit ">
+            <div className=" hover:cursor-pointer w-fit flex flex-row items-center  text-white bg-black px-[30px] rounded-lg py-4">
               <RiAdminFill />
-              <span className="ml-3">Admin</span>
+              <span className="ml-3 ">Admin</span>
             </div>
-            <div className="w-fit flex flex-row items-center text-white bg-black py-4 px-[30px] rounded-lg ml-12">
+            <div  className="hover:cursor-pointer w-fit flex flex-row items-center text-white bg-black py-4 px-[30px] rounded-lg ml-12">
               <BiSolidUser />
-              <span className="ml-3">Login / Register</span>
+              <Link to="/signup" className="ml-3">Login / Register</Link>
             </div>
           </div>
         </div>
