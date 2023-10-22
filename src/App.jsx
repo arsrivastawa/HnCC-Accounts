@@ -5,10 +5,9 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import OverviewAndSteps from "./components/OverviewAndSteps";
 import Alumni from "./components/Alumni";
+import FooterHero from "./components/FooterHero";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
       <Navbar />
@@ -16,6 +15,7 @@ function App() {
       <About />
       <OverviewAndSteps />
       <Alumni />
+      <FooterHero />
     </>
   );
 }
