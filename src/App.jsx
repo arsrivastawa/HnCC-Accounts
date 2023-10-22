@@ -3,6 +3,7 @@ import "./App.css";
 import Navbar from "./components/navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
+import OverviewAndSteps from "./components/OverviewAndSteps";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -12,6 +13,7 @@ function App() {
       <Navbar />
       <Hero />
       <About />
+      <OverviewAndSteps />
     </>
   );
 }
