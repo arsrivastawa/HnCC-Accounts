@@ -1,18 +1,22 @@
-import React from 'react'
-import Navbar from './Navbar'
-import Hero from './Hero'
-import About from './About'
+import React from "react";
+import Navbar from "./Navbar";
+import Hero from "./Hero";
+import About from "./About";
+import OverviewAndSteps from "./OverviewAndSteps";
+import FooterHero from "./FooterHero";
+import Alumni from "./Alumni";
 
 const Combined = () => {
   return (
-    <div>
+    <>
       <Navbar />
-      
-
       <Hero />
       <About />
-    </div>
-  )
-}
+      <OverviewAndSteps />
+      <Alumni />
+      <FooterHero />
+    </>
+  );
+};
 
-export default Combined
+export default Combined;
