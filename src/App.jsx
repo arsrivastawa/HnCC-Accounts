@@ -5,6 +5,9 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
+import OverviewAndSteps from "./components/OverviewAndSteps";
+import Alumni from "./components/Alumni";
+import FooterHero from "./components/FooterHero";
 
 import Signup from "./components/signup";
 import {
@@ -19,10 +22,9 @@ import Login from "./components/Login";
 
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
+
     <BrowserRouter>
       
 
@@ -34,6 +36,7 @@ function App() {
       </Routes>
       
       </BrowserRouter> 
+
     </>
   );
 }
