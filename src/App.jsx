@@ -5,6 +5,7 @@ import Signup from "./components/signup";
 import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
 import Combined from "./components/Combined";
 import Login from "./components/Login";
+import { useLocation } from "react-router-dom";
 
 function App() {
   return (
