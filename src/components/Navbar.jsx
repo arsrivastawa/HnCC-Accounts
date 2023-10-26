@@ -23,7 +23,7 @@ const Navbar = () => {
           <div className="auth-btn-container flex flex-row w-fit ">
             <div className=" hover:cursor-pointer w-fit flex flex-row items-center  text-white bg-black px-[30px] rounded-lg py-4">
               <RiAdminFill />
-              <span className="ml-3 ">Admin</span>
+              <Link to="/Admin_login"><span className="ml-3 ">Admin</span></Link>
             </div>
             <Link to="/signup" className="">
               <div className="hover:cursor-pointer w-fit flex flex-row items-center text-white bg-black py-4 px-[30px] rounded-lg ml-12">
