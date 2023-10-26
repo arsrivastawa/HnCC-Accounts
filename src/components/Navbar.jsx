@@ -1,6 +1,8 @@
 import React from "react";
 import { RiAdminFill } from "react-icons/ri";
 import { BiSolidUser } from "react-icons/bi";
+import { motion } from "framer-motion";
+
 
 import { Link } from "react-router-dom";
 

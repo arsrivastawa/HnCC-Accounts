@@ -5,8 +5,12 @@ import Signup from "./components/signup";
 import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
 import Combined from "./components/Combined";
 import Login from "./components/Login";
+<<<<<<< HEAD
 import Welcome_back from "./components/Welcome_back";
 import Admin_login from "./components/Admin_login";
+=======
+import { useLocation } from "react-router-dom";
+>>>>>>> main
 
 function App() {
   return (
