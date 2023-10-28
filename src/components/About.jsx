@@ -6,7 +6,7 @@ import SubHeading from "./sub-components/SubHeading";
 const About = () => {
   return (
     <>
-      <div className="about-container w-full py-4 px-20">
+      <div className="about-container w-full py-4 px-20" id="about">
         <SubHeading title={"About Us"}
          />
         <div className="content py-10 px-20 border-y-2 flex flex-row border-slate-200">
