@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+
 const DevMode = () => {
   return (
     <>
@@ -26,6 +27,9 @@ const DevMode = () => {
           </li>
           <li className="inline mx-4" value="">
             <Link to={"/make_payment"}>Payment Page</Link>
+          </li>
+          <li className="inline mx-4" value="">
+            <Link to={"/scanqr"}>Scan QR</Link>
           </li>
         </ul>
       </div>

@@ -1,10 +1,26 @@
 import React, { useState } from "react";
 
 const MakePayment = () => {
+  const [toggle, setToggle] = useState(false);
+  const [height, setHeight] = useState("h-[58px]");
+  const [rotate, setRotate] = useState("rotate-0");
+
+  function toggleHeight() {
+    if (toggle) {
+      setToggle(!toggle);
+      setHeight("h-[58px]");
+      setRotate("rotate-0");
+    } else {
+      setToggle(!toggle);
+      setHeight("h-[116px]");
+      setRotate("rotate-180");
+    }
+  }
+
   return (
     <>
       <div className="nav w-full flex flex-row justify-between px-20 py-16">
-        <div className="aspect-square w-14 rounded-full border border-black flex justify-center items-center">
+        <div className="aspect-square cursor-pointer w-14 rounded-full border border-black flex justify-center items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="21"
@@ -18,7 +34,7 @@ const MakePayment = () => {
             />
           </svg>
         </div>
-        <div className=" w-20 h-12 bg-black rounded-lg text-white flex justify-center items-center">
+        <div className=" w-20 h-12 cursor-pointer bg-black rounded-lg text-white flex justify-center items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
@@ -219,6 +235,54 @@ const MakePayment = () => {
             <label className="text-2xl font-normal" htmlFor="fThousand">
               ₹5000
             </label>
+          </div>
+        </div>
+        <div className="dropdown-n-btn w-[40%] mb-11 flex flex-col">
+          <div
+            className={`inpt-container flex relative overflow-hidden flex-col mt-8 ${height} duration-200 border rounded-xl border-[#040404]`}
+          >
+            <div
+              className="head cursor-pointer flex flex-row justify-between items-center py-4 pl-6 "
+              onClick={(e) => {
+                e.preventDefault();
+                toggleHeight();
+              }}
+            >
+              <div className="head underline underline-offset-4 text-black text-base font-medium">
+                Enter your Custom Donation Amount
+              </div>
+              <div className={`icon duration-200 px-3 ${rotate}`}>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="12"
+                  height="6"
+                  viewBox="0 0 12 6"
+                  fill="none"
+                >
+                  <path
+                    d="M1 1L5.65447 4.51671C6.02826 4.79913 6.548 4.7842 6.90496 4.48079L11 1"
+                    stroke="black"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div>
+              <input
+                type="text"
+                className="focus:outline-none mx-6 w-[80%] rounded-md px-4 py-2 absolute mb-4 border border-black"
+                name="custom_amount"
+                id="custom_amount"
+                placeholder="Enter Amount"
+              />
+            </div>
+          </div>
+          <div className="btn w-full flex flex-row justify-between mt-8">
+            <button className="w-[47%] bg-white text-lg font-normal border rounded-md px-[10px] py-4 border-[#040404]">
+              Cancel
+            </button>
+            <button className="w-[47%] bg-black text-white text-lg font-normal border rounded-md px-[10px] py-4">
+              Proceed Payment
+            </button>
           </div>
         </div>
       </div>

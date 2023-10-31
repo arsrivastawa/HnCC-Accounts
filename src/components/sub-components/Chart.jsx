@@ -2,7 +2,7 @@ import React, { useCallback, useLayoutEffect, useRef, useState } from "react";
 import { useEffect } from "react";
 import { PieChart, Pie, Tooltip, Cell } from "recharts";
 
-import { reciept, payments } from "../../credentials/data";
+// import { reciept, payments } from "../../credentials/data";
 
 const sum = (arr) => {
   let s = 0;
@@ -28,7 +28,6 @@ const data = [
 ];
 
 const COLORS = ["#0F0F0F", "#495057"];
-const RADIAN = Math.PI / 180;
 const CustomTooltip = ({ active, payload, label }) => {
   if (active && payload && payload.length) {
     return (

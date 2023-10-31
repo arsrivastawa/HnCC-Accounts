@@ -10,6 +10,7 @@ import Admin_login from "./components/Admin_login";
 import Congrats from "./components/Congrats";
 import DevMode from "./components/ForDevOnly/DevMode";
 import MakePayment from "./components/MakePayment";
+import ScanQR from "./components/ScanQR";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path="/Welcome_back" element={<Welcome_back />} />
           <Route path="/Admin_login" element={<Admin_login />} />
           <Route path="/make_payment" element={<MakePayment />} />
+          <Route path="/scanqr" element={<ScanQR />} />
         </Routes>
       </BrowserRouter>
     </>
