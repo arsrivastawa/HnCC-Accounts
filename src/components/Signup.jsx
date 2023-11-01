@@ -51,7 +51,7 @@ const Signup = () => {
                 />
               </div>
               <div className="thirdrow mb-10">
-                <span className=" text-l ">Create a passowrd</span>
+                <span className=" text-l ">Create a password</span>
                 <InputBox
                   id="password"
                   type="password"
