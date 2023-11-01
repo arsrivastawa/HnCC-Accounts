@@ -199,9 +199,9 @@ const MakePayment = () => {
             </div>
           </form>
         </div>
-        <div className="donation_ammount">
+        <div className="donation_amount">
           <h1 className="text-[#333] text-[22px] font-normal">
-            Choose a donation ammount
+            Choose a donation amount
           </h1>
           <div className="w-[105px] flex flex-row mt-3 justify-between items-center">
             <input
